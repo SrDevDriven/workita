@@ -1,0 +1,42 @@
+.image-text-section {
+  padding: 30px 0;
+  .info-part {
+    width: 50%;
+
+    .info {
+      padding-top: 40px;
+      padding-bottom: 36px;
+    }
+
+    .check-list {
+      gap: 12px;
+    }
+  }
+  .img-part {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.identify-gaps-section {
+  padding: 80px 0 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .image-text-section {
+    .wrapper {
+      flex-direction: column-reverse;
+
+      .info-part {
+        width: 100%;
+      }
+    }
+  }
+
+  .allocate {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+}

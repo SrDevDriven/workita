@@ -1,0 +1,20 @@
+.integrate-section {
+  padding: 80px 0;
+  text-align: center;
+  .info {
+    padding: 24px 0 30px;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .integrate-section {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.hero {
+  .container {
+    .wrapper {
+      padding: 75px 75px 250px 75px;
+      .hero-left {
+        width: 43%;
+        .info {
+          padding: 30px 0 45px 0;
+        }
+      }
+      .hero-right {
+        position: absolute;
+        right: 0;
+        top: 150px;
+        left: calc(43% + 93px);
+        img {
+          width: 100%;
+          max-height: 740px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .hero {
+    .container {
+      .wrapper {
+        padding: 75px 75px 150px 75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .hero {
+    .container {
+      .wrapper {
+        padding: 75px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hero {
+    .container {
+      .wrapper {
+        padding: 75px 0;
+        .hero-right {
+          left: calc(43% + 53px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    overflow-x: hidden;
+
+    .container {
+      .wrapper {
+        .hero-left {
+          width: 100%;
+        }
+        .hero-right {
+          position: relative;
+          top: 30px;
+          margin-right: -8rem;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    .container {
+      .wrapper {
+        padding: 50px 0 50px 0;
+        .hero-left {
+          .info {
+            padding: 30px 0 36px 0;
+          }
+        }
+        .hero-right {
+          margin-right: -10px;
+        }
+      }
+    }
+  }
+}
