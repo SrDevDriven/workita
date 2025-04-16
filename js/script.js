@@ -18,7 +18,7 @@ document
         howDidYouHear: document.getElementById("howDidYouHear").value,
         recaptchaResponse: recaptchaResponse,
       };
-
+      console.log(formData);
       // Send reCAPTCHA response to backend for verification
       fetch("https://www.google.com/recaptcha/api/siteverify", {
         method: "POST",
