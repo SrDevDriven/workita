@@ -94,11 +94,13 @@ document
               });
           } else {
             console.log("reCAPTCHA verification failed!");
+            $("#myModal").modal("hide");
           }
         })
         .catch((error) => {
           console.error("Error:", error);
           console.log("reCAPTCHA verification failed!");
+          $("#myModal").modal("hide");
         });
     }
   });

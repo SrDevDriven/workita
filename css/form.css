@@ -68,6 +68,44 @@
   height: 36px;
 }
 
+.cancel-btn {
+  border-radius: 100px;
+  border: 1px solid #fd7859;
+  padding: 9px 32px;
+  color: #fd7859;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.07px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #fd775978;
+  border: 1px solid #fd7859;
+}
+
+.book-submit-btn {
+  border-radius: 100px;
+  background: #fd7859;
+  padding: 9px 38px;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.07px;
+  height: 36px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.book-submit-btn:hover {
+  background: #e46045; /* slightly darker for hover */
+}
+
 .invalid-feedback {
   color: red;
   font-size: 0.875rem;
