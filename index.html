@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/img-txt-sec.css" />
     <link rel="stylesheet" type="text/css" href="css/integrate.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
   </head>
   <body>
     <section class="nav-hero">
@@ -32,7 +33,14 @@
         <div class="container">
           <div class="wrapper d-flex justify-content-between py-4">
             <img src="img/logo.svg" alt="Workita" />
-            <button class="book-btn">Book a Demo</button>
+            <button
+              type="button"
+              class="book-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Book a Demo
+            </button>
           </div>
         </div>
       </nav>
@@ -193,5 +201,83 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header (centered title, no close button or border) -->
+          <div class="modal-header border-0 justify-content-center">
+            <h5 class="modal-title text-center w-100" id="modalLabel">
+              Request a <span>live demo</span>
+            </h5>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body p-4">
+            <form>
+              <div class="row gx-4 gy-3">
+                <div class="col-md-6">
+                  <label class="form-label">First Name <span>*</span></label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Last Name <span>*</span></label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Company Name <span>*</span></label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label"
+                    >Business Email <span>*</span></label
+                  >
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone Number <span>*</span></label>
+                  <input type="tel" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Job Title <span>*</span></label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">How did you hear about us</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- reCAPTCHA widget -->
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LcJUxorAAAAAK2yOxyFI_oiC7Asy19Lfpmrj-kM
+          "
+          ></div>
+          <!-- Footer (centered buttons, no border) -->
+          <div class="modal-footer border-0 w-100 d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn cancel-btn"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn book-submit-btn">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

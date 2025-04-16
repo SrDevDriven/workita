@@ -1,0 +1,77 @@
+.form-label > span {
+  color: red;
+}
+
+.form-label {
+  color: #0e121b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.07px;
+}
+
+.modal-content {
+  border-radius: 24px;
+}
+
+.modal-title {
+  color: #0e121b;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+
+.modal-title span {
+  color: #fd7859;
+}
+
+.modal-header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 9px;
+}
+
+.custom-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.cancel-btn {
+  border-radius: 100px;
+  border: 1px solid #fd7859;
+  padding: 9px 32px;
+  color: #fd7859;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.07px;
+}
+
+.book-submit-btn {
+  border-radius: 100px;
+  background: #fd7859;
+  padding: 9px 38px;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.07px;
+  height: 36px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
