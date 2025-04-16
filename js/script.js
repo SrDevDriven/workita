@@ -1,5 +1,5 @@
 document
-  .querySelector("book-submit-btn")
+  .querySelector(".book-submit-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
 
