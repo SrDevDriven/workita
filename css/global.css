@@ -1,5 +1,7 @@
 body {
   font-family: Inter;
+  max-width: 2560px;
+  margin: auto;
 }
 
 h1,

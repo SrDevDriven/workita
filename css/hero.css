@@ -1,7 +1,7 @@
 .hero {
   .container {
     .wrapper {
-      padding: 75px 75px 250px 75px;
+      padding: 75px 75px 75px 75px;
       .hero-left {
         width: 43%;
         .info {
@@ -16,6 +16,19 @@
         img {
           width: 100%;
           max-height: 740px;
+          max-width: 726px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero {
+    .container {
+      .wrapper {
+        .hero-right {
+          left: calc(43% + 193px);
         }
       }
     }
