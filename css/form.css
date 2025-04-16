@@ -68,6 +68,12 @@
   height: 36px;
 }
 
+.invalid-feedback {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 708px;
