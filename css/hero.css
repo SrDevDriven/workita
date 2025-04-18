@@ -23,23 +23,26 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1561px) {
   .hero {
     .container {
       .wrapper {
-        .hero-right {
-          left: calc(43% + 193px);
+        display: flex;
+        align-items: center;
+        padding: 75px 75px 50px 75px;
+        .hero-left {
+          padding-top: 25px;
         }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  .hero {
-    .container {
-      .wrapper {
-        padding: 75px 75px 200px 75px;
+        .hero-right {
+          position: relative;
+          left: auto;
+          right: -30px;
+          top: 0;
+          width: 57%;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }

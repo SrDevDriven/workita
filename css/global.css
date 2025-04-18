@@ -88,6 +88,32 @@ p {
   display: none;
 }
 
+/* @media screen and (min-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1810px;
+  }
+} */
+
+@media screen and (min-width: 1561px) {
+  .lg-view {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .xl-view {
+    display: none;
+  }
+  .lg-view {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .wrapper {
     padding: 0;
