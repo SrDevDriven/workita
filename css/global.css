@@ -88,7 +88,7 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
   .container,
   .container-lg,
   .container-md,
@@ -97,7 +97,7 @@ p {
   .container-xxl {
     max-width: 1810px;
   }
-}
+} */
 
 @media screen and (min-width: 1561px) {
   .lg-view {
