@@ -64,7 +64,6 @@ document
       fetch("https://www.google.com/recaptcha/api/siteverify", {
         method: "POST",
         body: new URLSearchParams({
-          secret: "6LcJUxorAAAAAN0pKi3i7B9wwlFs5a5ZtCdiobFB", //  secret key!
           response: recaptchaResponse,
         }),
       })
