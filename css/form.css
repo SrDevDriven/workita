@@ -87,7 +87,8 @@
   border: 1px solid #fd7859;
 }
 
-.book-submit-btn {
+.book-submit-btn,
+.try-again-btn {
   border-radius: 100px;
   background: #fd7859;
   padding: 9px 38px;
@@ -102,7 +103,8 @@
   transition: all 0.3s ease;
 }
 
-.book-submit-btn:hover {
+.book-submit-btn:hover,
+.try-again-btn:hover {
   background: #e46045; /* slightly darker for hover */
 }
 
@@ -110,6 +112,70 @@
   color: red;
   font-size: 0.875rem;
   margin-top: 4px;
+}
+
+#modalLoadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* White, slightly transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1055; /* Above modal content */
+  border-radius: 0.5rem; /* Match modal rounded corners */
+}
+
+#modalLoadingOverlay .spinner img {
+  width: 50px;
+  height: 50px;
+}
+
+#successMessage,
+#failMessage {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-fail-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  background-color: #fd7859;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-title,
+.fail-title {
+  color: #fd7859;
+  margin-bottom: 10px;
+}
+
+.success-text,
+.fail-text {
+  color: #6c757d;
+}
+
+/* (Optional) Add fade-in animation for extra smoothness */
+.fade-in {
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 576px) {

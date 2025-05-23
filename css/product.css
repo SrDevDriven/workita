@@ -1,0 +1,147 @@
+.product {
+  .hero {
+    .container {
+      .wrapper {
+        padding: 80px 75px;
+
+        .hero-right {
+          padding-top: 50px;
+          padding-bottom: 50px;
+
+          img {
+            max-width: 614px;
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    h2 {
+      margin-bottom: 60px;
+    }
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 60px;
+      column-gap: 132px;
+
+      .feature-item {
+        img {
+          max-width: 100px;
+        }
+        h3 {
+          margin: 24px 0 18px 0;
+        }
+      }
+    }
+  }
+
+  .image-text-section {
+    .container {
+      .wrapper {
+        gap: 40px;
+      }
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .check-list {
+      gap: 36px;
+    }
+  }
+
+  .cta-banner {
+    .container {
+      .wrapper {
+        .content {
+          background: url("../img/product-cta-banner.png") !important;
+          background-size: cover !important;
+
+          h2 {
+            margin-bottom: -15px;
+          }
+
+          p {
+            max-width: 1290px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .product {
+    .features {
+      .feature-list {
+        column-gap: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .product {
+    .features {
+      .feature-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product {
+    .hero {
+      .container {
+        .wrapper {
+          padding: 50px 0;
+        }
+      }
+    }
+
+    .features {
+      h2 {
+        margin-bottom: 40px;
+      }
+      .feature-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        .feature-item {
+          img {
+            max-width: 60px;
+          }
+        }
+      }
+    }
+
+    .image-text-section {
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .check-list {
+        gap: 12px;
+      }
+    }
+
+    .cta-banner {
+      .container {
+        .wrapper {
+          .content {
+            padding: 50px 20px;
+
+            p {
+              text-align: left;
+            }
+            gap: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,33 @@
 nav {
   border-bottom: 0.5px solid #d6d6d67f;
 }
+
+nav .navbar-brand {
+  width: 145px;
+  margin-right: 120px;
+}
+
+nav .navbar-brand img {
+  width: 100%;
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+
+.nav-link.active {
+  color: #fd7859 !important;
+}
+
+@media screen and (max-width: 992px) {
+  nav .navbar-brand {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .navbar-brand {
+    width: 125px;
+  }
+}

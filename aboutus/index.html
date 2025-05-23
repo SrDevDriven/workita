@@ -18,16 +18,27 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="img/favicon.webp" sizes="any" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/hero.css" />
-    <link rel="stylesheet" type="text/css" href="css/img-txt-sec.css" />
-    <link rel="stylesheet" type="text/css" href="css/integrate.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../img/favicon.webp" sizes="any" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="../css/img-txt-sec.css" />
+    <link rel="stylesheet" type="text/css" href="../css/integrate.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+    <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slider.css" />
   </head>
-  <body class="home">
+  <body class="about-us">
     <section class="nav-hero">
       <nav class="navbar navbar-expand-md py-3">
         <div class="container">
@@ -51,7 +62,11 @@
 
                 <!-- Left: Logo -->
                 <a class="navbar-brand" href="#">
-                  <img src="img/logo.svg" alt="Worktika" style="height: 40px" />
+                  <img
+                    src="../img/logo.svg"
+                    alt="Worktika"
+                    style="height: 40px"
+                  />
                 </a>
               </div>
 
@@ -74,17 +89,16 @@
               >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-4">
                   <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Home</a>
+                    <a class="nav-link" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./product/index.html">Product</a>
+                    <a class="nav-link" href="../product/index.html">Product</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./aboutus/index.html">About Us</a>
+                    <a class="nav-link active" href="./index.html">About Us</a>
                   </li>
-
                   <li class="nav-item">
-                    <a class="nav-link" href="./pricing/index.html">Pricing</a>
+                    <a class="nav-link" href="../pricing/index.html">Pricing</a>
                   </li>
                 </ul>
 
@@ -107,19 +121,25 @@
         <div class="container">
           <div class="wrapper">
             <div class="hero-left">
-              <p class="blue-text">
-                Don't just keep up—lead the way with Worktika
-              </p>
-              <h1>
-                AI platform to support data-driven critical workforce decisions
-              </h1>
+              <p class="orange-text">lead the way with Worktika</p>
+              <h1>About Us</h1>
               <p class="info">
-                In today's AI-driven landscape, the growing competitive pressure
-                demands that businesses utilize their workforce resources
-                efficiently, cut costs, and adopt leaner corporate structures.
-                Our tools empower you to ensure your team possesses the
-                essential skills, eliminate unnecessary bureaucracy, and gain
-                valuable workforce insights.
+                At Worktika, we believe that people are the most valuable asset
+                in any organization. That’s why we’re on a mission to help
+                companies unlock the full potential of their workforce through
+                data-driven insights, skill intelligence, and smart resource
+                allocation.
+                <br /><br />
+                Worktika employs a data-driven, science-backed approach to equip
+                organizations with tools for identifying skill gaps and
+                redundancies, precisely staffing projects, and dynamically
+                allocating resources based on real-time needs. Through
+                continuous analysis of performance evaluations, tailored
+                employee development plans, and targeted training programs,
+                Worktika fosters employee engagement and drives organizational
+                efficiency. This enables businesses to thrive in a rapidly
+                evolving market and maximize the return on investment in human
+                capital. 
               </p>
               <button
                 class="book-btn"
@@ -130,130 +150,199 @@
               </button>
             </div>
             <div class="hero-right">
-              <img
-                src="img/hero-right-xl.webp"
-                alt="hero right bg"
-                class="desktop-view xl-view"
-              />
-              <img
-                src="img/hero-right.webp"
-                alt="hero right bg"
-                class="desktop-view lg-view"
-              />
-              <img
-                src="img/hero-right-mobile.webp"
-                alt="hero right mobile bg"
-                class="mobile-view"
-              />
+              <img src="../img/Numbers.png" alt="hero right bg" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="identify-gaps-section image-text-section">
+    <section class="mission py-80">
       <div class="container">
-        <div class="wrapper d-flex justify-content-between align-items-center">
-          <div class="img-part">
-            <img src="img/identify.webp" alt="identify skill gaps" />
-          </div>
-          <div class="info-part">
-            <p class="blue-text">Get Performance insights</p>
-            <h2>Identify skill gaps and redundancies</h2>
-            <p class="info">
-              Unlock the power of employee performance insights by leveraging
-              the combination of data collection, cutting-edge analytics, and
-              AI-driven reporting.
-            </p>
-            <div class="check-list d-flex flex-column">
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark.svg" alt="checkmark" />
-                <p>Integrating performance data from multiple sources</p>
-              </div>
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark.svg" alt="checkmark" />
-                <p>
-                  Actionable recommendations to support coaching conversations
-                </p>
-              </div>
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark.svg" alt="checkmark" />
-                <p>
-                  Real-Time Dashboards & Reports for customized OKRs and KPIs
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="allocate image-text-section">
-      <div class="container">
-        <div class="wrapper d-flex justify-content-between align-items-center">
-          <div class="info-part">
-            <p class="blue-text">
-              assign resources to projects like never before
-            </p>
-            <h2>Allocate resources based on real-time needs</h2>
-            <p class="info">
-              Leveraging data-driven insights and intelligent automation,
-              Worktika matches the right talent with the right roles at the
-              right time. By integrating advanced analytics, Worktika enables
-              organizations to identify skill gaps, forecast staffing needs, and
-              optimize workforce deployment across projects and departments.
-            </p>
-          </div>
-          <div class="img-part">
-            <img
-              src="img/allocate.webp"
-              alt="allocate resources based on real-time needs"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="image-text-section">
-      <div class="container">
-        <div class="wrapper d-flex justify-content-between align-items-center">
-          <div class="img-part">
-            <img src="img/data-driven.webp" alt="make data-driven decisions" />
-          </div>
-          <div class="info-part">
-            <p class="orange-text">instant clarity with advanced Reports</p>
-            <h2>Make Data-Driven Decisions</h2>
-            <p class="info">
-              Our platform reports are designed to be intuitive and
-              customizable. They empower users to track key metrics effectively,
-              visualize trends over time, and align outcomes with strategic
-              goals, delivering:
-            </p>
-            <div class="check-list d-flex flex-column">
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark-orange.svg" alt="checkmark" />
-                <p>Deep insights into team performance</p>
-              </div>
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark-orange.svg" alt="checkmark" />
-                <p>Progress on ongoing projects</p>
-              </div>
-              <div class="check-list-item d-flex gap-3">
-                <img src="img/checkmark-orange.svg" alt="checkmark" />
-                <p>Support operational efficiency</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="integrate-section">
-      <div class="container">
-        <div class="wrapper d-flex flex-column align-items-center">
-          <h2>Integrate with Your Favorite Tools</h2>
-          <p class="info">
-            We provide integration with industry tools such as Workday, Jira,
-            and Asana. If you require assistance in integrating the Worktika
-            platform with other HRIS or project management systems, our team is
-            ready to help.
+        <div class="wrapper">
+          <div class="blue-text">OUR MISSION</div>
+          <h2>We're always thinking, 'what's next?'</h2>
+          <p>
+            We aim to unlock employees' full potential and enable continuous
+            professional growth in a working environment where talent and
+            culture matter. 
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="partnership py-80">
+      <div class="container">
+        <div class="wrapper">
+          <div class="values">
+            <div class="green-text">OUR VALUES</div>
+            <p>
+              At Worktika, we are committed to delivering exceptional value to
+              our customers by fostering a culture rooted in innovation,
+              integrity, and human-centric design. We embrace bold, ambitious
+              ideas that challenge the status quo and lead to transformative
+              outcomes for the organizations we serve.
+            </p>
+          </div>
+          <div class="info-part">
+            <h3>Partnership for innovation</h3>
+            <p class="info">
+              We partner with forward-thinking organizations to:
+            </p>
+            <div class="check-list d-flex flex-column">
+              <div class="check-list-item d-flex gap-3">
+                <img src="../img/checkmark-green.svg" alt="checkmark-green" />
+                <p>Identify and close skill gaps</p>
+              </div>
+              <div class="check-list-item d-flex gap-3">
+                <img src="../img/checkmark-green.svg" alt="checkmark-green" />
+                <p>Eliminate role redundancies</p>
+              </div>
+              <div class="check-list-item d-flex gap-3">
+                <img src="../img/checkmark-green.svg" alt="checkmark-green" />
+                <p>Optimize team allocation</p>
+              </div>
+              <div class="check-list-item d-flex gap-3">
+                <img src="../img/checkmark-green.svg" alt="checkmark-green" />
+                <p>Support career growth and retention</p>
+              </div>
+              <div class="check-list-item d-flex gap-3">
+                <img src="../img/checkmark-green.svg" alt="checkmark-green" />
+                <p>Drive workforce agility in a rapidly changing world</p>
+              </div>
+            </div>
+            <p class="info">
+              With a foundation in workforce science and a focus on user-centric
+              design, Worktika transforms raw data into actionable intelligence
+              that drives better decisions, stronger teams, and measurable
+              impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team-section">
+      <div class="container">
+        <div class="wrapper">
+          <!-- Header with title and navigation -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-start">
+              <small class="text-uppercase small-text">OUR TEAM</small>
+              <h2 class="h2-text">Who's behind Worktika</h2>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="d-flex gap-2">
+              <div class="custom-swiper-button-prev">
+                <i class="bi bi-chevron-left"></i>
+              </div>
+              <div class="custom-swiper-button-next">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Slider Container -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Team Member Card 1 -->
+              <div class="swiper-slide">
+                <img
+                  src="../img/member1.png"
+                  class="team-img"
+                  alt="Team Member 1"
+                />
+                <h5 class="team-name">John Smith</h5>
+                <span class="team-role">CEO</span>
+                <p class="team-content">
+                  Lorem ipsum dolor sit amet. Rem illo veniam vel culpa dolores
+                  est fuga galisum ab corrupti quasi. Ex sint neque aut
+                  molestiae voluptas et nemo assumenda in doloribus rerum ut
+                  perferendis minus ut necessitatibus dolorem.
+                </p>
+              </div>
+              <!-- Team Member Card 2 -->
+              <div class="swiper-slide">
+                <img
+                  src="../img/member2.png"
+                  class="team-img"
+                  alt="Team Member 2"
+                />
+                <h5 class="team-name">John Smith</h5>
+                <span class="team-role">CEO</span>
+                <p class="team-content">
+                  Lorem ipsum dolor sit amet. Rem illo veniam vel culpa dolores
+                  est fuga galisum ab corrupti quasi. Ex sint neque aut
+                  molestiae voluptas et nemo assumenda in doloribus rerum ut
+                  perferendis minus ut necessitatibus dolorem.
+                </p>
+              </div>
+              <!-- Team Member Card 3 -->
+              <div class="swiper-slide">
+                <img
+                  src="../img/member3.png"
+                  class="team-img"
+                  alt="Team Member 3"
+                />
+                <h5 class="team-name">John Smith</h5>
+                <span class="team-role">CEO</span>
+                <p class="team-content">
+                  Lorem ipsum dolor sit amet. Rem illo veniam vel culpa dolores
+                  est fuga galisum ab corrupti quasi. Ex sint neque aut
+                  molestiae voluptas et nemo assumenda in doloribus rerum ut
+                  perferendis minus ut necessitatibus dolorem.
+                </p>
+              </div>
+              <!-- Team Member Card 1 -->
+              <div class="swiper-slide">
+                <img
+                  src="../img/member1.png"
+                  class="team-img"
+                  alt="Team Member 1"
+                />
+                <h5 class="team-name">John Smith</h5>
+                <span class="team-role">CEO</span>
+                <p class="team-content">
+                  Lorem ipsum dolor sit amet. Rem illo veniam vel culpa dolores
+                  est fuga galisum ab corrupti quasi. Ex sint neque aut
+                  molestiae voluptas et nemo assumenda in doloribus rerum ut
+                  perferendis minus ut necessitatibus dolorem.
+                </p>
+              </div>
+              <!-- Team Member Card 2 -->
+              <div class="swiper-slide">
+                <img
+                  src="../img/member2.png"
+                  class="team-img"
+                  alt="Team Member 2"
+                />
+                <h5 class="team-name">John Smith</h5>
+                <span class="team-role">CEO</span>
+                <p class="team-content">
+                  Lorem ipsum dolor sit amet. Rem illo veniam vel culpa dolores
+                  est fuga galisum ab corrupti quasi. Ex sint neque aut
+                  molestiae voluptas et nemo assumenda in doloribus rerum ut
+                  perferendis minus ut necessitatibus dolorem.
+                </p>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-banner py-80">
+      <div class="container">
+        <div class="wrapper">
+          <div class="content">
+            <h2>
+              Ready to see <span class="text-orange">Worktika</span> in action?
+            </h2>
+            <button
+              class="book-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Request a Demo
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -263,7 +352,7 @@
           <p>© 2025 Worktika</p>
           <div class="logo-list d-flex gap-3">
             <a href="https://www.linkedin.com/company/worktika">
-              <img src="img/linkedin.webp" alt="linkedin" />
+              <img src="../img/linkedin.webp" alt="linkedin" />
             </a>
           </div>
         </div>
@@ -453,7 +542,7 @@
           <div id="modalLoadingOverlay" style="display: none">
             <div class="spinner" style="text-align: center">
               <img
-                src="./img/loading.gif"
+                src="../img/loading.gif"
                 style="width: 50px; height: 50px"
                 alt="Loading..."
               />
@@ -467,7 +556,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="js/script.js"></script>
+    <script src="../js/slide.js"></script>
   </body>
 </html>

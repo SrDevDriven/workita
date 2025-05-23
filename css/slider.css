@@ -1,0 +1,248 @@
+/* Team section layout */
+.team-section {
+  padding-top: 60px;
+}
+
+/* Swiper container styles */
+.swiper {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+/* Individual slide styles */
+.swiper-slide {
+  background: #fff;
+  border-radius: 10px;
+  height: 420px;
+  width: 429.33px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Team member image styles */
+.team-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Team member name styles */
+.team-name {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+}
+
+/* Team member role styles */
+.team-role {
+  color: #fd7859;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+}
+
+/* Team member content styles */
+.team-content {
+  color: #525866;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+}
+
+/* Default Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  width: 35px;
+  height: 35px;
+  top: -20px;
+}
+
+/* Swiper navigation button icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  color: #fd7859;
+}
+
+/* Swiper pagination bullet styles */
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #ddd;
+  opacity: 1;
+  border-radius: 5px;
+  width: 49px;
+  height: 5px;
+}
+
+/* Active pagination bullet styles */
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #fd7859;
+}
+
+/* Pagination container positioning */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+/* Custom navigation button styles */
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #fd7859;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Custom navigation button spacing */
+.custom-swiper-button-prev {
+  margin-right: 10px;
+}
+
+/* Custom navigation button icons */
+.custom-swiper-button-prev i,
+.custom-swiper-button-next i {
+  font-size: 12px;
+  color: #fd7859;
+}
+
+/* Active navigation button styles */
+.swiper-btn-active {
+  background-color: #fd7859 !important;
+  border-color: #fd7859 !important;
+}
+
+/* Active navigation button icon styles */
+.swiper-btn-active i {
+  color: #fff !important;
+}
+
+/* Swiper wrapper layout */
+.swiper-wrapper {
+  gap: 24px;
+  display: flex;
+}
+
+/* Small text styles (used for section subtitle) */
+.small-text {
+  color: #fd7859;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Heading text styles */
+.h2-text {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+}
+
+/* Swiper container adjustments for screens up to 786px */
+@media screen and (max-width: 786px) {
+  .swiper {
+    padding-bottom: 8px;
+    padding-top: 60px;
+  }
+}
+
+/* Styles for screens up to 480px */
+@media screen and (max-width: 480px) {
+  /* Align content to the end on small screens */
+  .align-items-center {
+    align-items: end !important;
+  }
+
+  /* Add extra spacing below elements */
+  .gap-2 {
+    padding-bottom: 15px;
+  }
+
+  /* Heading text styles */
+  .h2-text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  /* Small highlight text styles */
+  .small-text {
+    color: #fd7859;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  /* Circular image style for team members */
+  .team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  /* Paragraph text for team member bios */
+  .team-content {
+    color: #525866;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.24px;
+    font-weight: 400;
+  }
+
+  /* Team member role styling */
+  .team-role {
+    color: #fd7859;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+    font-weight: 400;
+  }
+
+  /* Team member name styling */
+  .team-name {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    font-weight: 400;
+  }
+
+  /* Swiper container padding for small screens */
+  .swiper {
+    padding-bottom: 0px;
+    padding-top: 35px;
+  }
+
+  /* Swiper wrapper spacing */
+  .swiper-wrapper {
+    gap: 0px;
+  }
+
+  /* Swiper pagination bullet styling */
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    opacity: 1;
+    border-radius: 5px;
+    width: 35px;
+    height: 5px;
+  }
+}

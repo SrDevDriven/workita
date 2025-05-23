@@ -1,0 +1,157 @@
+.about-us {
+  .py-80 {
+    padding: 80px 0;
+  }
+
+  .hero {
+    .container {
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hero-right {
+          width: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .mission {
+    .container {
+      .wrapper {
+        text-align: center;
+        h2 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .partnership {
+    .container {
+      .wrapper {
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+
+        .values {
+          width: calc(50% - 80px);
+          padding: 45px 60px 60px 60px;
+          border-radius: 24px;
+          background: linear-gradient(
+            180deg,
+            rgba(212, 254, 241, 0.3) 0%,
+            rgba(212, 254, 241, 0.8) 100%
+          );
+
+          p {
+            margin-top: 30px;
+            color: #0e121b;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.36px;
+          }
+        }
+
+        .info-part {
+          width: 50%;
+
+          h3 {
+            margin-bottom: 30px;
+          }
+
+          .check-list {
+            gap: 12px;
+            margin: 18px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .cta-banner {
+    .container {
+      .wrapper {
+        .content {
+          background: url("../img/cta-banner-bg.png");
+          background-size: cover;
+          border-radius: 24px;
+          padding: 80px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 45px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us {
+    .container {
+      max-width: 1700px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us {
+    .hero {
+      .container {
+        .wrapper {
+          flex-direction: column;
+          gap: 40px;
+
+          .hero-right {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .partnership {
+      .container {
+        .wrapper {
+          flex-wrap: wrap;
+          .values {
+            width: 100%;
+            padding: 40px 20px;
+
+            p {
+              font-size: 14px;
+              margin-top: 12px;
+            }
+          }
+          .info-part {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-us {
+    .py-80 {
+      padding: 40px 0;
+    }
+
+    /* .cta-banner {
+      .container {
+        .wrapper {
+          .content {
+            padding: 80px 20px;
+          }
+        }
+      }
+    } */
+  }
+}

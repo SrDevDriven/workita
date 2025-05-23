@@ -13,11 +13,16 @@ p {
 
 .wrapper {
   padding: 0 75px;
+  width: 100%;
 }
 
 .nav-hero {
   background-image: url("../img/hero-bg.webp");
   background-size: cover;
+}
+
+.product .nav-hero {
+  background-image: url("../img/product-hero-bg.png");
 }
 
 .book-btn {
@@ -56,6 +61,24 @@ p {
   text-transform: uppercase;
 }
 
+.green-text {
+  color: #16c190;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 160% */
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.text-orange {
+  color: #fd7859;
+}
+
+.text-black {
+  color: black;
+}
+
 h1 {
   color: #0e121b;
   font-size: 50px;
@@ -85,6 +108,10 @@ p {
 }
 
 .mobile-view {
+  display: none;
+}
+
+.mobile-view-768 {
   display: none;
 }
 
@@ -138,6 +165,26 @@ p {
 
   .desktop-view {
     display: none;
+  }
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-view-768 {
+    display: block;
+  }
+
+  .desktop-view-768 {
+    display: none;
+  }
+
+  .sm-w-full {
+    width: 100%;
   }
 }
 
