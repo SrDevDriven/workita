@@ -93,14 +93,6 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .about-us {
-    .container {
-      max-width: 1700px;
-    }
-  }
-}
-
 @media screen and (max-width: 992px) {
   .about-us {
     .hero {

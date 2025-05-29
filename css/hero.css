@@ -4,6 +4,9 @@
       padding: 75px 75px 260px 75px;
       .hero-left {
         width: 43%;
+        h1 {
+          max-width: 500px;
+        }
         .info {
           padding: 30px 0 45px 0;
         }

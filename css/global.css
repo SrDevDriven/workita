@@ -141,6 +141,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .wrapper {
     padding: 0;
